@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="203" id="KGk-i7-Jjw" customClass="StretchCellCell" customModule="dailyPapaer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="203"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="202.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eTp-AT-pCh">
+                        <rect key="frame" x="0.0" y="0.0" width="321" height="202.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKh-UO-0Bk">
+                        <rect key="frame" x="139" y="112" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbX-9W-1LV">
+                        <rect key="frame" x="142.5" y="147.5" width="36" height="36"/>
+                        <state key="normal" image="columnCellFollow"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MKh-UO-0Bk" firstAttribute="centerX" secondItem="eTp-AT-pCh" secondAttribute="centerX" id="Snm-v8-mee"/>
+                    <constraint firstItem="SbX-9W-1LV" firstAttribute="centerX" secondItem="MKh-UO-0Bk" secondAttribute="centerX" id="WVv-cb-lhn"/>
+                    <constraint firstAttribute="bottom" secondItem="MKh-UO-0Bk" secondAttribute="bottom" constant="70" id="cMn-1d-qKa"/>
+                    <constraint firstItem="eTp-AT-pCh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gKd-VR-YPR"/>
+                    <constraint firstItem="SbX-9W-1LV" firstAttribute="top" secondItem="MKh-UO-0Bk" secondAttribute="bottom" constant="15" id="qwY-CF-llc"/>
+                    <constraint firstAttribute="trailing" secondItem="eTp-AT-pCh" secondAttribute="trailing" id="uga-5N-NdV"/>
+                    <constraint firstItem="eTp-AT-pCh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="w6v-Gy-Xe6"/>
+                    <constraint firstAttribute="bottom" secondItem="eTp-AT-pCh" secondAttribute="bottom" id="yZO-Ri-gfG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addBtn" destination="SbX-9W-1LV" id="r7d-yk-Lv8"/>
+                <outlet property="bigImageView" destination="eTp-AT-pCh" id="pFl-lH-CCg"/>
+                <outlet property="titleLable" destination="MKh-UO-0Bk" id="sdy-YN-ye5"/>
+            </connections>
+            <point key="canvasLocation" x="219.5" y="208.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="columnCellFollow" width="36" height="36"/>
+    </resources>
+</document>
